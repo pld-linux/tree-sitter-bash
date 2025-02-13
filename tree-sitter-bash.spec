@@ -1,11 +1,11 @@
 Summary:	Bash grammar for tree-sitter
 Name:		tree-sitter-bash
-Version:	0.20.5
+Version:	0.23.3
 Release:	1
 License:	MIT
 Group:		Libraries
 Source0:	https://github.com/tree-sitter/tree-sitter-bash/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	fca0289b077a0aedf8b66ee9b9de6e6d
+# Source0-md5:	6b8a688964e897259112f320fc8b0dfe
 URL:		https://github.com/tree-sitter/tree-sitter-bash
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
