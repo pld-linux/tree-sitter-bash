@@ -34,7 +34,7 @@ Gramatyka Basha dla tree-sittera.
 Summary:	Bash parser for Neovim
 Summary(pl.UTF-8):	Analizator składni Basha dla Neovima
 Group:		Applications/Editors
-Requires:	%{name} = %{version}-%{release}
+Requires:	%{name}%{?_isa} = %{version}-%{release}
 
 %description -n neovim-parser-bash
 Bash parser for Neovim.
@@ -71,7 +71,7 @@ install -d $RPM_BUILD_ROOT{%{_libdir},%{_libdir}/nvim/parser}
 cp -p libtree-sitter-bash.so.%{version} $RPM_BUILD_ROOT%{_libdir}
 %{__ln_s} libtree-sitter-bash.so.%{version} $RPM_BUILD_ROOT%{_libdir}/libtree-sitter-bash.so.%{soname_ver}
 
-%{__ln_s} %{_libdir}/libtree-sitter-bash.so.%{soname_ver} $RPM_BUILD_ROOT%{_libdir}/nvim/parser/bash.so
+%{__ln_s} ../../libtree-sitter-bash.so.%{soname_ver} $RPM_BUILD_ROOT%{_libdir}/nvim/parser/bash.so
 
 %if %{with python3}
 %py3_install
