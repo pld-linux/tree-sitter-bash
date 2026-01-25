@@ -13,9 +13,9 @@ Group:		Libraries
 Source0:	https://github.com/tree-sitter/tree-sitter-bash/archive/v%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	97bcbab21f49b375bcf9e6834235f3ee
 URL:		https://github.com/tree-sitter/tree-sitter-bash
-%if %{with python3}
 # c11
 BuildRequires:	gcc >= 6:4.7
+%if %{with python3}
 BuildRequires:	python3-devel >= 1:3.10
 BuildRequires:	python3-setuptools
 BuildRequires:	python3-wheel
